@@ -107,5 +107,6 @@ public class Lambda01 {
     }
 
 
-
+    public static void yazdir(String s) {
+    }
 }

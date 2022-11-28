@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class Lambda02 {
     public static void main(String[] args) {
@@ -164,6 +165,8 @@ public class Lambda02 {
                 map(t -> t*t).                //sayilarin karesi ile devam ediyoruz akista
                 sorted().                     //akis icindeki sayilari kücükten büyüge siraladik
                 forEach(Lambda01 :: yazdir);  //akisdaki sayilari ekrana yazdir
+
+
 
     }
 

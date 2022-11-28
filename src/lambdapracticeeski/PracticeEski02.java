@@ -33,6 +33,7 @@ public class PracticeEski02 {
         System.out.println("***************");
         System.out.println("yuzeEsitElamanYokmu(list) = " + yuzeEsitElamanYokmu(list));
         System.out.println("***************");
+        System.out.println("sifiraEsitElamanYokmu= "+sifiraEsitElamanYokmu(list));
     }
     // S1:listi aralarinda bosluk birakarak yazdiriniz //
 
@@ -42,7 +43,7 @@ public class PracticeEski02 {
 
 
 
-    //S3: pozitif olanlardan yeni bir liste olustur
+    //S3: pozitif olanlardan yeni bir liste olustur  List<Integer> list = new ArrayList<>(Arrays.asList(-5,-8,-2,-12,0,1,12,5,6,9,15,8));
     public  static List<Integer> pozitifList(List<Integer> sayi){
         return sayi.stream().filter(t->t>0).collect(Collectors.toList());
     }
@@ -96,7 +97,9 @@ public class PracticeEski02 {
         return sayi.stream().noneMatch(t->t==100);
     }
     // S15: listenin sifira esit elemani yok mu?
-
+    public  static boolean sifiraEsitElamanYokmu(List<Integer> sayi) {
+        return sayi.stream().noneMatch(t->t==0);
+    }
 
 
     // S16:  listenin ilk 5 elemanini topla?
